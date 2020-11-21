@@ -6,7 +6,7 @@
 # b = Beta
 # o = Offical
 
-exec = q.exe # Change this to your executables names
+exec = q.out # Change this to your executables names
 
 $(exec): Q-SRC/QS-main.o  *.cpp
 	g++ -std=c++11 -Werror Q-SRC/QS-main.o -I Q-SRC *.cpp -o $(exec)
